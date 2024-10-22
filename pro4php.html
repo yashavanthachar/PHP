@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Factorial Calculator</h1>
+<script>
+        // Function to calculate the factorial of a number
+        function calculateFactorial(number) {
+            if (number < 0) {
+                return "Please enter a non-negative integer.";
+            } else if (number === 0 || number === 1) {
+                return 1;
+            } else {
+                let factorial = 1;
+                for ( i = 2; i<= number; i++) {
+                    factorial *= i;
+                }
+                return factorial;
+            }
+        }
+
+        // Example usage of the function
+        var n = prompt("Enter any number:")
+        result = calculateFactorial(n);
+
+        // Display the result
+        alert(result);
+</script>
+
+</body>
+</html>
